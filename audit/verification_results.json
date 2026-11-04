@@ -1,0 +1,387 @@
+{
+  "A_separating_example": {
+    "A": [
+      [
+        -1,
+        5
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "B": "I_2",
+    "P": "I_2",
+    "derived_old_slack_eigenvalues": [
+      "-1",
+      "9"
+    ],
+    "derived_sharp_slack_eigenvalues": [
+      "1",
+      "11"
+    ],
+    "derived_effective_diffusion": [
+      [
+        "3/2",
+        "-5/4"
+      ],
+      [
+        "-5/4",
+        "3/2"
+      ]
+    ],
+    "derived_effective_diffusion_eigenvalues": [
+      "1/4",
+      "11/4"
+    ],
+    "derived_operator_norm": "exp(1*t)",
+    "derived_eigenvalues_A_plus_AT": [
+      "-7",
+      "3"
+    ],
+    "derived_isotropic_threshold_sharp": "4/3",
+    "derived_isotropic_threshold_published": "2/3",
+    "derived_integer_shear_thresholds": {
+      "published": 4,
+      "sharp": 6
+    }
+  },
+  "B_one_step_witness": {
+    "M": 3,
+    "Q": 1,
+    "P": 1,
+    "input": "exp(-x^2)",
+    "derived_output_width": "1/3",
+    "derived_matrix_slack_MRM^T-P-4Q": "4",
+    "derived_input_norm_squared_(13)": "1"
+  },
+  "C_shear_sampling": {
+    "cases": 140,
+    "max_entry_error": 2.2737367544323206e-13,
+    "max_determinant_error": 1.3642420526593924e-12,
+    "sampling_thresholds_q1": {
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.3000561741443266,
+      "10": 0.47215676424674574,
+      "25": 0.579224093345147,
+      "100": 0.5967696468346214
+    },
+    "large_shear_limit": 0.5979259924940631,
+    "section_route_vs_space_route_s5": [
+      {
+        "t": 0.05,
+        "min_eig_I+2Q-MM^T": -0.05322808427089363,
+        "min_eig_I+4Q-MM^T": 0.05462593755759429
+      },
+      {
+        "t": 0.1,
+        "min_eig_I+2Q-MM^T": -0.11036608417979146,
+        "min_eig_I+4Q-MM^T": 0.12225920531637123
+      },
+      {
+        "t": 1.0,
+        "min_eig_I+2Q-MM^T": 1.1856806420380626,
+        "min_eig_I+4Q-MM^T": 1.660402828263593
+      }
+    ]
+  },
+  "D_effective_covariance": {
+    "cases": 24,
+    "max_entry_error": 8.881784197001252e-16
+  },
+  "E_norm_sharpness_packets": [
+    {
+      "frequency_width": 1.0,
+      "ratio_to_exact_norm": 0.8657220396336376
+    },
+    {
+      "frequency_width": 0.5,
+      "ratio_to_exact_norm": 0.9604915568172152
+    },
+    {
+      "frequency_width": 0.2,
+      "ratio_to_exact_norm": 0.9933388533981145
+    },
+    {
+      "frequency_width": 0.1,
+      "ratio_to_exact_norm": 0.9983217132303641
+    },
+    {
+      "frequency_width": 0.05,
+      "ratio_to_exact_norm": 0.9995796066853028
+    },
+    {
+      "frequency_width": 0.01,
+      "ratio_to_exact_norm": 0.999983173719449
+    }
+  ],
+  "F_diffusion_approximation": {
+    "t": "1/10",
+    "witness": "exp(-8|x|^2/5)",
+    "derived_witness_norm_squared": "25/16",
+    "ray_variance_(13/8)e^(-1/5)": 1.33043747375172,
+    "eigs_MM^T-5/4I": [
+      -0.7508920745225218,
+      0.09303626894798067
+    ],
+    "brownian_output_min_eig_(5/4)I+4Q-MM^T": 0.3722592053163712,
+    "H_t": 0.13660620798824383,
+    "H_t_bound_(e^(6t)-1)/6": 0.13701980006508485,
+    "moment_integral_over_pi": 24575.999999999953,
+    "prefactor_32sqrt6": 78.38367176906162,
+    "bound_coefficient_(52)": 0.44750479309016955,
+    "coefficient_with_exact_H_t": 0.4461540070236112,
+    "limit_constant_Gamma": 0.09925369193896706,
+    "bound_over_Gamma": 4.50869669780494,
+    "exact_eps_norms_(56)": [
+      {
+        "epsilon": 0.4,
+        "norm": 0.01581496459439243,
+        "norm_over_eps2": 0.09884352871495265
+      },
+      {
+        "epsilon": 0.2,
+        "norm": 0.00396850275828165,
+        "norm_over_eps2": 0.09921256895704123
+      },
+      {
+        "epsilon": 0.1,
+        "norm": 0.0009924702654616722,
+        "norm_over_eps2": 0.09924702654616721
+      },
+      {
+        "epsilon": 0.05,
+        "norm": 0.00024813061919377866,
+        "norm_over_eps2": 0.09925224767751144
+      }
+    ],
+    "cartesian_check_eps_0.2": 0.003968502758281575,
+    "taylor_bound_max_ratio": 0.9999997380406743
+  },
+  "G_additive_noise_rigidity_cauchy": {
+    "asymmetric_exponential_noise": [
+      {
+        "eta": 0.4,
+        "numeric": [
+          0.7425393078306848,
+          -0.29701572313229574
+        ],
+        "predicted": [
+          0.7425393078307438,
+          -0.29701572313229757
+        ]
+      },
+      {
+        "eta": 1.3,
+        "numeric": [
+          0.1671187471680804,
+          -0.21725437131849862
+        ],
+        "predicted": [
+          0.16711874716808953,
+          -0.2172543713185164
+        ]
+      }
+    ],
+    "rectangular_marginal_ratio_spread": 6.661338147750939e-16,
+    "fourier_identity": [
+      {
+        "eta": 0.0,
+        "numeric": 0.9219544417181158,
+        "predicted": 0.9219544457292888
+      },
+      {
+        "eta": 0.7,
+        "numeric": 0.4918842268181417,
+        "predicted": 0.49188542543139907
+      },
+      {
+        "eta": 1.9,
+        "numeric": 0.06357631454857496,
+        "predicted": 0.06357662136913585
+      }
+    ],
+    "mu_R": 0.4503634757073202,
+    "norm_squared": 0.45036347570732005,
+    "lower_bound": [
+      {
+        "b": 1.0,
+        "integral": 1.283365292336864,
+        "lower_bound": 0.7686153913131033
+      },
+      {
+        "b": 3.0,
+        "integral": 769072.9793026028,
+        "lower_bound": 210.79171469577534
+      },
+      {
+        "b": 4.5,
+        "integral": 3488454840996314.0,
+        "lower_bound": 565580.1819131431
+      }
+    ]
+  },
+  "H_admissible_bandwidths": {
+    "isotropic_threshold_sharp": 1.3333333333333366,
+    "isotropic_threshold_published": 0.66666666666667,
+    "singular_noise_B=e2": {
+      "sharp": 0.38095238095238776,
+      "published": 0.19047619047619738
+    },
+    "lyapunov_ray": [
+      {
+        "c": 0.01,
+        "min_eig_sharp_slack": 4.01
+      },
+      {
+        "c": 1.0,
+        "min_eig_sharp_slack": 5.0
+      },
+      {
+        "c": 4.0,
+        "min_eig_sharp_slack": 8.0
+      },
+      {
+        "c": 100.0,
+        "min_eig_sharp_slack": 104.0
+      },
+      {
+        "c": 10000.0,
+        "min_eig_sharp_slack": 10004.0
+      }
+    ],
+    "sampling_times": [
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "table": [
+      {
+        "sigma2": 0.5,
+        "published_rule_(31)": true,
+        "sharp_rule_(29)": true,
+        "invariant_at_t": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "sigma2": 0.6666666666666666,
+        "published_rule_(31)": true,
+        "sharp_rule_(29)": true,
+        "invariant_at_t": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "sigma2": 1.0,
+        "published_rule_(31)": false,
+        "sharp_rule_(29)": true,
+        "invariant_at_t": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "sigma2": 1.3333333333333333,
+        "published_rule_(31)": false,
+        "sharp_rule_(29)": true,
+        "invariant_at_t": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "sigma2": 1.5,
+        "published_rule_(31)": false,
+        "sharp_rule_(29)": false,
+        "invariant_at_t": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "sigma2": 2.0,
+        "published_rule_(31)": false,
+        "sharp_rule_(29)": false,
+        "invariant_at_t": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "sigma2": 4.0,
+        "published_rule_(31)": false,
+        "sharp_rule_(29)": false,
+        "invariant_at_t": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      }
+    ],
+    "first_invariant_sampling_time": {
+      "0.5": 0.05,
+      "0.6666666666666666": 0.05,
+      "1.0": 0.05,
+      "1.3333333333333333": 0.05,
+      "1.5": 0.5,
+      "2.0": 1.0,
+      "4.0": 2.0
+    }
+  },
+  "I_fixed_observable_asymptotic_ratio": 0.3237722713145643,
+  "figure": [
+    "figures/invariance_and_norm.pdf",
+    "figures/invariance_and_norm.png"
+  ],
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "optimize_flag": 0
+  },
+  "status": "all checks passed"
+}

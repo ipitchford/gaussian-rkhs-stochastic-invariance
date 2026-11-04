@@ -1,0 +1,113 @@
+target_id: gaussian-rkhs-levy-invariance-diffusion-limit
+search_date: 2026-11-01
+revision_date: 2026-11-04
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    For all d>=1, P,R positive definite, M invertible, b in R^d, and every
+    infinitely divisible random vector Z with Gaussian covariance component Q,
+    Tf(x)=E f(Mx+b+Z) maps the Gaussian RKHS H_P into H_R if and only if
+    M R M^T <= P+4Q. In that event its norm and essential norm equal
+    |det M|^(-1/2) (det P/det R)^(1/4). The jump measure is unrestricted
+    except for the Levy measure condition. For dX=A X dt+dL, invariance
+    of H_P at all times is equivalent to A P+P A^T <=4D, where D is the
+    Brownian covariance rate of L, rather than its total covariance rate.
+    For A=[[-1,5],[0,-1]], P=I, t=1/10, and f(x)=exp(-8|x|^2/5),
+    symmetric coordinate compound-Poisson approximations with jumps +/-epsilon
+    and individual rates 1/(2epsilon^2) have K_epsilon f outside H_I for
+    every epsilon>0, although the Brownian limit has K_0 f in H_I and
+    ||K_epsilon-K_0||_(H_I to C_b) is asymptotic to a positive constant
+    times epsilon^2. The proved uniform bound is <0.448 epsilon^2 at t=1/10.
+  exclusions:
+    - No historical-priority claim for the pure Gaussian affine criterion.
+    - No novelty claim for Levy-Khintchine, the OU transition exponent, or j(xi)=o(|xi|^2).
+    - No novelty claim for the kernel-mean/MMD duality identity.
+    - No general claim that jumps do not smooth in other function spaces.
+    - No state-dependent Levy jump kernel classification. (Nonlinear Borel drift with additive state-independent noise is now covered by Theorem 9 of the revised manuscript.)
+    - No comparison with total-variation convergence or RKHS operator convergence of the approximants.
+source:
+  originating_reference: "Extension of the Gaussian invariance question in Philipp et al. (2025), Remark 2.2(c); Levy extension is a proposed theorem, not an expressly sourced open problem."
+  url: "https://arxiv.org/abs/2405.14429"
+normalisation:
+  indices: "Equal input and output dimension d; xi is input Fourier frequency."
+  scaling: "k_P(x,y)=exp(-(x-y)^T P^-1(x-y)); Brownian covariance at time t is tD."
+  basis_order: "Real Euclidean coordinates; unitary Fourier transform with (2pi)^(-d/2)."
+  symmetries:
+    - Common invertible real coordinate transformations.
+    - Noise and deterministic translations affect phase only.
+    - Orthogonal transformations of the explicit isotropic-kernel example.
+sequences:
+  - name: "Classical cosine Taylor coefficients in epsilon^(-2)(cos(epsilon u)-1)"
+    exact_values: ["-1/2", "1/24", "-1/720", "1/40320", "-1/3628800"]
+    natural_scalings: ["Coefficient of epsilon^(2k-2) u^(2k) is (-1)^k/(2k)!; standard cosine series, not a new sequence."]
+generating_functions:
+  - name: "Compound-Poisson characteristic exponent"
+    expression: "epsilon^(-2) sum_i(cos(epsilon xi_i)-1)"
+    variables: [epsilon, xi]
+matrices:
+  - name: "One-dimensional contraction with arbitrary jumps"
+    entries: [["1/2"]]
+    parameters: "P=R=1, Q=0; norm sqrt(2)."
+  - name: "One-dimensional exact Brownian boundary"
+    entries: [["2"]]
+    parameters: "P=R=1, Q=3/4; 4=1+4Q, norm 1/sqrt(2), regardless of jumps."
+  - name: "One-dimensional forbidden expansion with pure jumps"
+    entries: [["2"]]
+    parameters: "P=R=1, Q=0; no jump measure repairs 4>1."
+  - name: "Stable nonnormal drift"
+    entries: [["-1", "5"], ["0", "-1"]]
+  - name: "Symmetric drift part without division by two"
+    entries: [["-2", "5"], ["5", "-2"]]
+  - name: "Brownian sharp slack"
+    entries: [["6", "-5"], ["-5", "6"]]
+aliases:
+  analysis:
+    - Gaussian Fourier-weighted L2
+    - Gaussian reproducing kernel Hilbert space
+    - ultra-analytic and Gelfand-Shilov spaces
+    - affine weighted composition operator
+    - Gaussian convolution or heat-transform conjugacy
+  probability:
+    - Levy-Ornstein-Uhlenbeck transition
+    - infinitely divisible additive noise
+    - skew convolution semigroup
+    - Brownian component versus jump component
+    - compound-Poisson diffusion approximation
+  combinatorics:
+    - Poissonization and the classical cosine exponential generating series
+  mathematical_physics:
+    - Fock-space second quantisation
+    - bosonic Gaussian integral operators
+    - nonlocal semigroup smoothing
+  statistics_optimisation_ml:
+    - stochastic Koopman invariance
+    - Gaussian kernel bandwidth
+    - kernel mean embedding
+    - Gaussian maximum mean discrepancy
+    - kernel EDMD model misspecification under diffusion approximation
+known_invariants:
+  drift: "trace=-2; determinant=1; characteristic polynomial (lambda+1)^2."
+  symmetric_drift: "trace=-4; determinant=-21; eigenvalues 3,-7."
+  sharp_slack: "trace=12; determinant=11; eigenvalues 1,11."
+  fixed_time: "M M^T=e^(-1/5)[[5/4,1/2],[1/2,1]]; Rayleigh quotient in (1,1)/sqrt(2) is (13/8)e^(-1/5)>5/4."
+  witness: "fhat is a nonzero multiple of exp(-5|xi|^2/32), so its input weighted-square exponent is -|xi|^2/16."
+  leading_prediction_constant: "Positive weighted Gaussian L2 norm of exp(-j_0,t) integral_0^t sum_i(e^(sA^T)xi)_i^4 ds /24."
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora:
+    - Public web search engines exposed in the environment
+    - arXiv primary preprints and HTML
+    - Publisher-hosted journal articles and PDFs
+    - Institutional author repositories and theses
+  not_accessed:
+    - Exhaustive MathSciNet or zbMATH searches
+    - Author correspondence
+    - An exhaustive corpus of non-English literature
+revision_2026_11_04:
+  limit_constant_Gamma_I_t0.1: 0.099254
+  bound_coefficient_over_limit: 4.5
+  related_public_posting: "GitHub the-omega-institute/trureturing #23376 (2026-10-28), Gaussian OU witness only, no proof, no Levy content"
+  additive_noise_rigidity: |
+    Revised Theorem 9. For T f(x)=E f(F(x)+Z), F Borel, |phi_Z(eta)|>=c exp(-gamma|eta|^2)
+    (every infinitely divisible law), T(H_P) in H_R forces F(x)=Mx+b with rank M=d;
+    for infinitely divisible Z: bounded iff M R M^T <= P+4Q, Q the Gaussian component.

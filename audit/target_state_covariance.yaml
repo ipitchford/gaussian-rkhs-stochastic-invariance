@@ -1,0 +1,50 @@
+target_id: state-dependent-gaussian-transition-rigidity
+search_date: 2026-11-01
+revision_date: 2026-11-04
+intended_contribution_unit: classification_theorem
+claim:
+  exact_statement: |
+    Let d,m>=1, P in S_{++}^m, R in S_{++}^d, and Borel maps
+    F:R^d->R^m and Q:R^d->S_+^m. Define
+    T f(x)=integral f(u) N(F(x),Q(x))(du), with every Q(x) finite.
+    For the global Gaussian RKHS H_P with
+    k_P(u,v)=exp(-(u-v)^T P^-1 (u-v)), T(H_P) is contained in H_R
+    iff Q(x)=Q_0 constant and F(x)=M x+b with M full column rank,
+    and M R M^T <= P+4Q_0.
+    With S=P+4Q_0 and E=(M^T S^-1 M)^-1, the exact range is H_E
+    and exact norm is (detP/detS)^(1/4)(detE/detR)^(1/4).
+  exclusions:
+    - Fixed affine Gaussian boundedness is subsumed by Olshanski/Neretin Gaussian-operator theory.
+    - Deterministic Gaussian composition rigidity is prior art.
+    - The new candidate unit is deriving covariance constancy from RKHS boundedness.
+    - No claim about non-Gaussian finite-time transition laws of general nonlinear SDEs.
+    - Additive state-independent non-Gaussian noise is treated separately (revised Theorem 9); state-dependent non-Gaussian noise remains open.
+normalisation:
+  kernel_width: P is the matrix in the inverse exponent, not the probabilistic covariance.
+  single_mean_kernel: E k_P(U,y)=sqrt(detP/det(P+2Q)) exp(-(F-y)^T(P+2Q)^-1(F-y)).
+  double_mean_kernel: E k_P(U,Uprime) uses P+4Q for independent equal covariances.
+  entire_evaluation: norm(eval_z on H_R)=exp(2 Im(z)^T R^-1 Im(z)).
+  complex_kernel_section: norm(kappa_w in H_P)=exp(2 Im(w)^T P^-1 Im(w)).
+fingerprints:
+  analytic_family: Phi(z,w)=(T kappa_w)(x_0+z v), jointly entire.
+  covariance_coefficient: C_ij(z)=-0.5*(Phi_ij(z,0)/g(z)-Phi_i(z,0)*Phi_j(z,0)/g(z)^2).
+  bounded_cayley_transform: (u^T C(z)u-1)/(u^T C(z)u+1).
+  mean_pole_removal: Phi(z,e_i)=g(z)*exp(2L_i(z)-C_ii).
+  exact_range_kernel: c*k_E, c=sqrt(detP/det(P+4Q)).
+aliases:
+  - heteroscedastic Gaussian transition operator
+  - Gaussian conditional expectation operator
+  - covariance rigidity
+  - coherent states to squeezed Gaussian vectors
+  - Gaussian-preserving bounded linear operators
+  - Gaussian-to-Gaussian Markov operators
+  - entire-function Liouville rigidity
+  - Gaussian integral operator classification
+  - global Gaussian RKHS invariance
+sources_to_distinguish:
+  - Ikeda-Ishikawa-Sawano2022 deterministic composition operators
+  - Neretin1990 and2011 Gaussian integral operators in Fock space
+  - DePalma-Mari-Giovannetti-Holevo2015 Gaussian-state-preserving superoperators
+  - Holevo2017 Gaussian-probability-preserving Markov operators
+  - Alekseev-Afonin-Bogachev2021 Gaussian transition operators
+related_public_posting: "GitHub the-omega-institute/trureturing #23376 (2026-10-28): OU witness A=[[-1,5],[0,-1]], B=C=I and the I+4Q_t Gram identity, posted without proof; no rigidity statement."

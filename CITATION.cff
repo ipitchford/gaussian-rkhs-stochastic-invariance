@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "When Gaussian kernel spaces are invariant under stochastic dynamics: transition rigidity, a Gaussian-component noise boundary and a discontinuous diffusion limit"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23937400
+date-released: 2026-11-04
+repository-code: "https://github.com/ipitchford/gaussian-rkhs-stochastic-invariance"
+url: "https://evidencepress.org/releases/gaussian-rkhs-stochastic-invariance/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23937400
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23937399
+    description: "Concept DOI (all versions)"
+keywords:
+  - Koopman operator
+  - reproducing kernel Hilbert space
+  - Gaussian kernel
+  - Ornstein-Uhlenbeck process
+  - Levy noise
+  - kernel EDMD
+abstract: "Kernel methods for stochastic Koopman operators often assume that the dynamics map a Gaussian RKHS into itself. Gaussian transitions N(F(x),Q(x)) between global Gaussian RKHSs force constant Q, affine F and MRM^T <= P+4Q; additive noise with a Gaussian lower bound on its characteristic function (every infinitely divisible law) forces affine drift, and only the Gaussian covariance component counts. A compound-Poisson approximation of a stable linear diffusion converges at sharp order eps^2 in the norm into bounded continuous functions while every approximant sends exp(-8|x|^2/5) outside the RKHS. Ornstein-Uhlenbeck invariance holds exactly when AP+PA^T <= 4BB^T, so the sufficient condition with factor 2 of Philipp et al. (2025) is not necessary; this fixed affine criterion specialises classical Gaussian-Fock theory, and the witness was proposed first in GitHub issue the-omega-institute/trureturing #23376. Unrefereed candidate; internal AI-assisted review only. Text CC0-1.0; code MIT."

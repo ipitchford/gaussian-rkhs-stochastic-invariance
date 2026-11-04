@@ -1,0 +1,196 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the dated novelty reports in audit/ (1-4 November 2026) and the reference retrieval of 4 November 2026. It documents the scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Theorem 5: Gaussian transitions N(F(x),Q(x)) bounded between global Gaussian RKHSs have constant Q, affine F with full-column-rank M, and MRM^T <= P+4Q.",
+   "unit": "statement",
+   "paperLocation": "Section 2.5, Theorem 5",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search engines, arXiv, publisher pages, GitHub issue search (audit/consolidated_novelty_report.md, audit/state_covariance_novelty_report.md, audit/levy_novelty.md)",
+     "query": "Gaussian RKHS invariance Koopman Ornstein-Uhlenbeck necessity; covariance rigidity Gaussian kernel; Levy noise Gaussian RKHS; P+4Q; shear witness"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Gaussian-Fock and Gaussian transition operator literature (audit/fock_prior_art_and_asymptotic.md) and GitHub issue search",
+     "query": "Neretin Gaussian integral operators; Olshanski semigroup; Gaussian-to-Gaussian superoperators; trureturing #23376"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "api.crossref.org, arxiv.org abstract pages and the GitHub API",
+     "query": "registry records for every registry-identified bibliography entry (refs/records.jsonl)"
+    }
+   ],
+   "closestPriorWork": "Ikeda, Ishikawa and Sawano 2022 (deterministic composition rigidity); Ohnishi et al. 2024 Remark 3.1 (qualitative, deterministic)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 9: additive noise with a Gaussian lower bound on its characteristic function forces affine drift (including pure-jump Levy noise).",
+   "unit": "statement",
+   "paperLocation": "Section 5.2, Theorem 9",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search engines, arXiv, publisher pages, GitHub issue search (audit/consolidated_novelty_report.md, audit/state_covariance_novelty_report.md, audit/levy_novelty.md)",
+     "query": "Gaussian RKHS invariance Koopman Ornstein-Uhlenbeck necessity; covariance rigidity Gaussian kernel; Levy noise Gaussian RKHS; P+4Q; shear witness"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "api.crossref.org, arxiv.org abstract pages and the GitHub API",
+     "query": "registry records for every registry-identified bibliography entry (refs/records.jsonl)"
+    }
+   ],
+   "closestPriorWork": "None found for stochastic additive-noise rigidity",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorems 8 and 11: for affine infinitely divisible transitions only the Gaussian covariance component decides the boundary; Levy-OU criterion AP+PA^T <= 4D.",
+   "unit": "statement",
+   "paperLocation": "Sections 5.1, 5.4",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search engines, arXiv, publisher pages, GitHub issue search (audit/consolidated_novelty_report.md, audit/state_covariance_novelty_report.md, audit/levy_novelty.md)",
+     "query": "Gaussian RKHS invariance Koopman Ornstein-Uhlenbeck necessity; covariance rigidity Gaussian kernel; Levy noise Gaussian RKHS; P+4Q; shear witness"
+    }
+   ],
+   "closestPriorWork": "Nishiyama and Fukumizu 2016 (Levy-Khintchine kernel machinery)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 12 and Proposition 13: sharp-order eps^2 prediction convergence coexisting with membership loss of exp(-8|x|^2/5) for every compound-Poisson approximant at t=1/10.",
+   "unit": "statement",
+   "paperLocation": "Section 6",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search engines, arXiv, publisher pages, GitHub issue search (audit/consolidated_novelty_report.md, audit/state_covariance_novelty_report.md, audit/levy_novelty.md)",
+     "query": "Gaussian RKHS invariance Koopman Ornstein-Uhlenbeck necessity; covariance rigidity Gaussian kernel; Levy noise Gaussian RKHS; P+4Q; shear witness"
+    }
+   ],
+   "closestPriorWork": "None found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Method: Fourier description of Gaussian RKHSs combined with the two-noise-copy Gram identity (difference covariance 2Q gives P+4Q), applied to Borel transition fields via translate structure.",
+   "unit": "method",
+   "paperLocation": "Sections 2.2-2.5, Lemma 2, Proposition 3",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search engines, arXiv, publisher pages, GitHub issue search (audit/consolidated_novelty_report.md, audit/state_covariance_novelty_report.md, audit/levy_novelty.md)",
+     "query": "Gaussian RKHS invariance Koopman Ornstein-Uhlenbeck necessity; covariance rigidity Gaussian kernel; Levy noise Gaussian RKHS; P+4Q; shear witness"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Gaussian-Fock and Gaussian transition operator literature (audit/fock_prior_art_and_asymptotic.md) and GitHub issue search",
+     "query": "Neretin Gaussian integral operators; Olshanski semigroup; Gaussian-to-Gaussian superoperators; trureturing #23376"
+    }
+   ],
+   "closestPriorWork": "Ikeda, Ishikawa and Sawano 2022 (Fourier method for deterministic maps); Neretin 2011 (Gaussian integral operators)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Proposition 3 and Theorem 6: fixed affine criterion MRM^T <= P+4Q and OU criterion AP+PA^T <= 4BB^T; shear witness shows the factor-2 condition of Philipp et al. 2025a is not necessary.",
+   "unit": "statement",
+   "paperLocation": "Sections 2.3, 3, 4",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search engines, arXiv, publisher pages, GitHub issue search (audit/consolidated_novelty_report.md, audit/state_covariance_novelty_report.md, audit/levy_novelty.md)",
+     "query": "Gaussian RKHS invariance Koopman Ornstein-Uhlenbeck necessity; covariance rigidity Gaussian kernel; Levy noise Gaussian RKHS; P+4Q; shear witness"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "Gaussian-Fock and Gaussian transition operator literature (audit/fock_prior_art_and_asymptotic.md) and GitHub issue search",
+     "query": "Neretin Gaussian integral operators; Olshanski semigroup; Gaussian-to-Gaussian superoperators; trureturing #23376"
+    }
+   ],
+   "closestPriorWork": "Neretin 1990, 2011 (Gaussian-Fock operators, contains the fixed affine criterion); GitHub issue the-omega-institute/trureturing #23376 (witness and proposed derivation, explicitly unproven)",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Philipp, Schaller, Worthmann, Peitz and Nuske, PAMM 25 (2025) e202400127, arXiv:2405.14429v1",
+   "usedFor": "Theorem 2.1 (sufficient condition), Remarks 2.2(c) and 4.2 (open necessity question)",
+   "readWhat": "Full arXiv v1 HTML",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Section 1.1"
+  },
+  {
+   "citation": "GitHub issue the-omega-institute/trureturing #23376 (28 October 2026)",
+   "usedFor": "Prior public statement of the witness and a proposed derivation",
+   "readWhat": "Full issue body and comments (refs/records.jsonl source JSON)",
+   "date": "2026-11-04",
+   "evidenceLocator": "manuscript Section 1.4"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "State-dependent non-Gaussian transitions (for example state-dependent Levy kernels or Gaussian mixtures) are not covered by the rigidity theorems.",
+   "closingQuestion": "Can such a kernel map one global Gaussian RKHS into another?",
+   "triedOrSearched": "Recorded as open problem 1.",
+   "estimatedCost": "months",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "Drift rigidity is proved only for noise with a Gaussian lower bound on its characteristic function.",
+   "closingQuestion": "Does rigidity persist for characteristic functions vanishing on open sets or decaying faster than Gaussians?",
+   "triedOrSearched": "Recorded as open problem 2.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the revision budget."
+  },
+  {
+   "limitation": "All statements concern the global RKHS norm, not pointwise prediction, weighted norms or finite-data learning.",
+   "closingQuestion": "What are the analogues in weighted or data-adapted norms?",
+   "triedOrSearched": "Scope stated in Sections 9 and 11.",
+   "estimatedCost": "months",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "Priority holds only within a bounded search; the fixed affine criterion is classical and the witness was proposed publicly first.",
+   "closingQuestion": "Do the rigidity or Levy results appear elsewhere?",
+   "triedOrSearched": "Dated searches in audit/ including GitHub issue search.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Bounded search cannot certify absence.",
+   "whyNotClosedNow": "No further search would establish priority."
+  },
+  {
+   "limitation": "Finite checks cover constants, normalisations and implementation, not the theorems.",
+   "closingQuestion": "Do the checks fail when the sharp factor 4 or the witness is corrupted, including under python -O?",
+   "triedOrSearched": "Explicit check() calls; corruption negative controls run in the release gate plan.",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead, November 2026",
+  "date": "2026-11-04",
+  "proposals": [
+   "Covariance-field rigidity for Gaussian transitions",
+   "Additive non-Gaussian (Levy) noise rigidity and boundary",
+   "Diffusion-limit membership loss with sharp rate",
+   "Bandwidth rule and kEDMD consequence",
+   "Weighted-norm analogues"
+  ],
+  "actions": [
+   "First four added in the revision round (Theorems 5, 8, 9, 11, 12, Corollary 18)",
+   "Weighted norms recorded as open problem 3"
+  ]
+ }
+}
