@@ -77,17 +77,17 @@ TheoremIII.1, pp8–12, assumes a bounded linear map on the Hilbert space of Hil
 
 Our hypothesis is different: the transition law is Gaussian conditional on each state, and its expectation operator is bounded between Gaussian RKHSs. We do not assume that every Gaussian distribution of the input state produces a Gaussian output distribution. The inspected theorems therefore cannot simply be cited to prove the strengthened classification. This is a verified hypothesis distinction, not proof of historical novelty.
 
-### 3.4 Holevo2017: abstract inspected, full theorem unavailable
+### 3.4 Holevo2017: read in full (addendum 9 November 2026), incomparable premise
 
 A. S. Holevo, *On a Characterization of Gaussian Transition Operators*, Theory of Probability and Its Applications61(4)(2017),712–718, https://doi.org/10.1137/S0040585X97T988435 .
 
-The publisher abstract says the paper characterizes Markov operators preserving Gaussian probability measures and integral operators preserving unnormalized Gaussian measures. The full paper is behind a purchase/sign-in page in the available web interface. Its exact variants were not inspected. It remains an unresolved possible preserver-theory overlap; no strong exclusion should be claimed from its abstract alone.
+The paper was read in full for release 0.1.1-candidate (9 November 2026). Theorem1 (p.712) assumes a Feller endomorphism of M(R^n) that maps every Gaussian probability measure to a Gaussian measure and concludes that it is a Markov operator with Gaussian transition probability N(K_0x+y_0,Υ_0): the same affine-Gaussian conclusion as Theorem5, from a different premise. Theorem2 (p.716) characterizes Feller maps sending Gaussian measures bijectively to nondegenerate unnormalized Gaussian measures, centred to centred, as Gaussian integral operators. Neither theorem has an RKHS hypothesis, a rectangular (m to d) case, a rank condition or a matrix inequality. Our premise assumes Gaussian images of Dirac masses only, with no Feller or continuity condition, plus RKHS boundedness; the premises are incomparable. A posteriori the transitions of Theorem5 lie in Holevo's class, so Theorem5 is a new route to the conclusion, not a larger class. Not pre-empted.
 
 ### 3.5 Alekseev–Afonin–Bogachev2021: primary full theorem inspected, different premise
 
 G. A. Alekseev, K. A. Afonin and V. I. Bogachev, *On Gaussian transition operators*, Doklady Mathematics104(2)(2021),229–233, https://doi.org/10.1134/S1064562421050021 . Russian primary record: https://www.mathnet.ru/eng/danma196 ; Russian DOI https://doi.org/10.31857/S2686954321050027 .
 
-Initial attempts to access the Math-Net PDF and English publisher text failed. A later Russian-language search located the complete primary Russian HTML article at https://sciencejournals.ru/view-article/?a=DANMIUp2105002Alekseev&j=danmiup&n=1&v=500&y=2021 . The introduction, Theorems1–3 and their proof were inspected.
+The complete primary Russian article (Doklady RAN. Matematika 500 (2021), pp.10–15) was read, first as HTML at https://sciencejournals.ru/view-article/?a=DANMIUp2105002Alekseev&j=danmiup&n=1&v=500&y=2021 and again in full as PDF on 9 November 2026. It contains Theorems1–4, Lemma1 and Remark1; Remark1 shows that the Feller condition can be weakened but not dropped.
 
 Theorem1 extends the Gaussian-measure-preserver result to locally convex spaces, assuming preservation of Gaussian laws supported on affine lines. Theorem2 weakens the continuity hypothesis and Theorem3 treats the one-dimensional case. These hypotheses still quantify over all nondegenerate one-dimensional Gaussian INPUT distributions, rather than conditional laws alone. The introduction explicitly explains that Gaussian images of Dirac masses are insufficient and gives the pushforward x->x^3 as a counterexample. The proof varies Gaussian input variance and uses the heat equation to identify constant conditional variance and affine mean. Thus its assumption is genuinely distinct from the present Gaussian RKHS boundedness hypothesis; it is not a direct theorem-level collision.
 
@@ -110,7 +110,7 @@ All queries below were run on1November2026. Engine1 was used for primary-source 
 | "Gaussian" "RKHS" "state-dependent" covariance Koopman; "Gaussian" "composition operator" covariance "constant"; "heteroscedastic" "Koopman" "Gaussian" | Originating2025 OU paper and current Koopman material | No state-covariance theorem found in these results |
 | "Gaussian transition" "reproducing kernel" bounded operator; "Gaussian" "Markov" "RKHS" "constant covariance"; "Gaussian" "covariance" "Liouville" "composition"; "Gaussian kernel" "heteroscedastic" "bounded" operator | Mainly unrelated Gaussian processes and probability material | No exact analytic-rigidity argument identified |
 | "On Gaussian Transition Operators"; "Gaussian" "kernel" "covariance rigidity"; "Gaussian" "Markov kernels" "affine" characterization bounded operator | Holevo2017 and Alekseev–Afonin–Bogachev2021 identified | Close alias requires explicit source inspection |
-| "Holevo" "On a Characterization of Gaussian Transition Operators" pdf; "On Gaussian Transition Operators" Alekseev Afonin Bogachev pdf | Holevo publisher abstract; Math-Net primary record; inaccessible full texts | Precise missingness retained |
+| "Holevo" "On a Characterization of Gaussian Transition Operators" pdf; "On Gaussian Transition Operators" Alekseev Afonin Bogachev pdf | Holevo publisher record; Math-Net primary record (both papers later read in full; see 3.4–3.5) | Superseded by the 9 November 2026 addendum |
 | "bounded" "operators" "coherent states" "Gaussian" preservation | De Palma et al.2015; Gaussian symmetries/parametrisations | Triggered full primary PDF inspection |
 | "bounded operator" "maps" "coherent states" "squeezed"; "Gaussian-preserving" "bounded" operators pure; "Gaussian states" "linear operators" "pure" "classification" | Quantum Gaussian operation/symmetry literature | No exact real-labelled Gaussian-vector preserver theorem located |
 | "linear operators" "Gaussian functions" "preserve"; "bounded" "Gaussian functions" "maps" "characterization"; "coherent states" "Gaussian states" "preserving" "operator" theorem; "Gaussian transition operators" "translations" | Adjacent Gaussian-function and quantum-operation literature | No theorem-level collision verified |
@@ -127,13 +127,13 @@ All queries below were run on1November2026. Engine1 was used for primary-source 
 | Arbitrary covariance-field constancy | BOUNDED UNCERTAINTY | A self-contained proven classification step; historical novelty provisional |
 | Direct mean-affinity proof | Known-special-case recovery and proof synthesis | Credit deterministic rigidity; describe a common analytic proof |
 | Rectangular dimensions and exact coisometric range | Standard range-RKHS consequence | Complete the classification quantitatively without standalone novelty claims |
-| Whole manuscript | Mathematically substantive synthesis, priority incomplete | Any assessment must reflect uninspected variants in Holevo2017, the bounded scope of the preserver search, the classical affine overlap, and the earlier public posting of the OU witness (GitHub issue #23376) |
+| Whole manuscript | Mathematically substantive synthesis, priority incomplete | Any assessment must reflect Holevo2017 Theorem1 (same affine-Gaussian conclusion from an incomparable premise), the bounded scope of the preserver search, the classical affine overlap, and the earlier public posting of the OU witness (GitHub issue #23376) |
 
 ## 6. Decision
 
 Proceed with the theorem and self-contained proof, while presenting originality cautiously. There is no mathematical gap presently identified in the covariance/mean rigidity argument, but the strongest statement-level novelty claim has not passed an exhaustive preserver-literature audit. Neither failed search queries nor a recent source's open-question wording can establish priority.
 
-The next historical check is the full text of Holevo2017 for variants beyond its main Gaussian-input-preservation theorem, followed by any bounded coherent-to-Gaussian-vector preserver theorem not found in this search. Alekseev–Afonin–Bogachev2021 has now been checked at theorem level. Do not treat this proof alone as establishing historical priority.
+Holevo2017 (Theorems1–2) and Alekseev–Afonin–Bogachev2021 (Theorems1–4, Remark1) have now been checked at theorem level (addendum 9 November 2026); neither pre-empts Theorem5. The next historical check is any bounded coherent-to-Gaussian-vector preserver theorem not found in this search. Do not treat this proof alone as establishing historical priority.
 
 ## Revision addendum (4 November 2026)
 

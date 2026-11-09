@@ -75,7 +75,7 @@ The derivation is a genuine formula-level overlap, not merely a shared use of Fo
 
 ### Very recent related paper
 
-Sang and Zhao, *Gaussian Integral Operator between Fock Spaces*, arXiv:2610.28279, submitted 20 October 2026, studies one complex variable and arbitrary Gaussian integral kernels across \(F^p\to F^q\). I inspected the full abstract, which states complete boundedness and compactness criteria. Full text could not be retrieved through available arXiv endpoints. The abstract already contains our scalar special case, but the older multidimensional Olshanski criterion is the more decisive overlap. Source: https://arxiv.org/abs/2610.28279 . Do not imply that the new paper's full theorem was inspected.
+Sang and Zhao, *Boundedness and compactness of Gaussian integral operators between Fock spaces*, arXiv:2610.28279v1, submitted 20 October 2026 (the arXiv listing title is shorter), studies one complex variable and Gaussian integral kernels with fixed parameters across \(F^p\to F^q\). The full paper was read on 9 November 2026. Theorem 1.1 at \(p=q=2\), with the parameters of manuscript (24) at \(d=1\), reduces to criterion (26); its compactness criterion (Theorem 1.2) never holds for these operators, in agreement with Theorem 20 of the manuscript. It contains no rigidity result. The older multidimensional Olshanski criterion remains the more decisive overlap. Source: https://arxiv.org/abs/2610.28279 .
 
 ## 2. Exact Gaussian range and a basic alternative derivation
 

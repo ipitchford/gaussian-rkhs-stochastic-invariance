@@ -2,9 +2,9 @@
 
 *Transition rigidity, a Gaussian-component noise boundary and a discontinuous diffusion limit*
 
-Author: Anonymous. Text CC0-1.0; code MIT (see `LICENSE.md`). Version 0.1.0-candidate, an unrefereed research candidate. Its review was internal and AI-assisted, not human peer review.
+Author: Anonymous. Text CC0-1.0; code MIT (see `LICENSE.md`). Version 0.1.1-candidate, an unrefereed research candidate. Its review was internal and AI-assisted, not human peer review.
 
-- Version DOI: [10.5281/zenodo.23937400](https://doi.org/10.5281/zenodo.23937400); concept DOI (all versions): [10.5281/zenodo.23937399](https://doi.org/10.5281/zenodo.23937399)
+- Version DOI: [10.5281/zenodo.24089772](https://doi.org/10.5281/zenodo.24089772) (version 0.1.0-candidate: [10.5281/zenodo.23937400](https://doi.org/10.5281/zenodo.23937400)); concept DOI (all versions): [10.5281/zenodo.23937399](https://doi.org/10.5281/zenodo.23937399)
 - Release page: <https://evidencepress.org/releases/gaussian-rkhs-stochastic-invariance/>
 
 ## The question in one paragraph
@@ -20,7 +20,11 @@ Kernel methods such as kernel EDMD learn how a random system evolves by working 
 
 ## What is prior work, and what is not claimed
 
-The fixed affine criterion is a specialisation of classical Gaussian-Fock operator theory (Neretin 1990, 2011): the OU answer is a translation, not a new operator theorem. The shear witness and a proposed derivation were posted first, explicitly unproven, in GitHub issue [the-omega-institute/trureturing #23376](https://github.com/the-omega-institute/trureturing/issues/23376) (28 October 2026). All statements concern the global RKHS norm, not pointwise prediction or finite-data learning. State-dependent non-Gaussian transitions remain open. Novelty is asserted only within a bounded, dated search (see `audit/`).
+The fixed affine criterion is a specialisation of classical Gaussian-Fock operator theory (Neretin 1990, 2011): the OU answer is a translation, not a new operator theorem. The shear witness and a proposed derivation were posted first, explicitly unproven, in GitHub issue [the-omega-institute/trureturing #23376](https://github.com/the-omega-institute/trureturing/issues/23376) (28 October 2026). All statements concern the global RKHS norm, not pointwise prediction or finite-data learning. Holevo (2017, Theorem 1) reaches the same affine-Gaussian conclusion as Theorem 5 from an incomparable premise (Feller maps that send every Gaussian measure on $\mathbb R^n$ to a Gaussian measure, with no RKHS hypothesis, no rectangular case and no matrix inequality); Alekseev, Afonin and Bogachev (2021) need Gaussian images only for Gaussians on affine lines. Theorem 5 is a new route to that conclusion, from RKHS boundedness, not a larger class. State-dependent non-Gaussian transitions remain open. Novelty is asserted only within a bounded, dated search (see `audit/`).
+
+## Changes in 0.1.1
+
+Release 0.1.1-candidate (DOI 10.5281/zenodo.24089772) corrects the wording of 0.1.0-candidate (DOI 10.5281/zenodo.23937400), which remains archived unchanged. Theorems, proofs, figures, code and recorded outputs are unchanged. (1) The journal numbering of Philipp et al. (2025a, PAMM) is stated: Theorem 2.1, Remark 2.2(c), Proposition 3.3, Proposition 4.1 and Remark 4.2, as in the arXiv version. (2) Section 3 compares Theorem 5 precisely with Holevo (2017, Theorem 1) and Alekseev, Afonin and Bogachev (2021), and records that Sang and Zhao (2026, Theorem 1.1) reproduce criterion (26) in one variable. (3) The originality boundary for Theorem 5 now reads "covariance rigidity from RKHS boundedness". (4) For Philipp et al. (2025b) the manuscript cites arXiv:2312.10460v1. The audit reports are updated to match.
 
 ## Files
 
@@ -49,4 +53,4 @@ Each run takes about 15 seconds and writes only inside the chosen directory; com
 
 ## How to cite
 
-Anonymous (2026). *When Gaussian kernel spaces are invariant under stochastic dynamics: transition rigidity, a Gaussian-component noise boundary and a discontinuous diffusion limit*. Version 0.1.0-candidate. Evidence Press, unrefereed candidate. https://doi.org/10.5281/zenodo.23937400
+Anonymous (2026). *When Gaussian kernel spaces are invariant under stochastic dynamics: transition rigidity, a Gaussian-component noise boundary and a discontinuous diffusion limit*. Version 0.1.1-candidate. Evidence Press, unrefereed candidate. https://doi.org/10.5281/zenodo.24089772

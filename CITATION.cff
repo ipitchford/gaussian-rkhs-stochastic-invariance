@@ -4,9 +4,9 @@ title: "When Gaussian kernel spaces are invariant under stochastic dynamics: tra
 type: software
 authors:
   - name: Anonymous
-version: 0.1.0-candidate
-doi: 10.5281/zenodo.23937400
-date-released: 2026-11-04
+version: 0.1.1-candidate
+doi: 10.5281/zenodo.24089772
+date-released: 2026-11-09
 repository-code: "https://github.com/ipitchford/gaussian-rkhs-stochastic-invariance"
 url: "https://evidencepress.org/releases/gaussian-rkhs-stochastic-invariance/"
 license:
@@ -14,8 +14,11 @@ license:
   - MIT
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.24089772
+    description: "Version DOI (0.1.1-candidate)"
+  - type: doi
     value: 10.5281/zenodo.23937400
-    description: "Version DOI (0.1.0-candidate)"
+    description: "Version DOI (0.1.0-candidate, superseded)"
   - type: doi
     value: 10.5281/zenodo.23937399
     description: "Concept DOI (all versions)"

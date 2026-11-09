@@ -1,6 +1,6 @@
 {
  "schemaVersion": "1.0",
- "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the dated novelty reports in audit/ (1-4 November 2026) and the reference retrieval of 4 November 2026. It documents the scrutiny performed, not historical priority.",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the dated novelty reports in audit/ (1-4 November 2026) and the reference retrieval of 4 November 2026; updated 9 November 2026 for release 0.1.1-candidate after Holevo (2017), Alekseev, Afonin and Bogachev (2021, Russian original), Philipp et al. (2025a, PAMM) and Sang and Zhao (2026) were read in full. It documents the scrutiny performed, not historical priority.",
  "contributionMap": [
   {
    "claim": "Theorem 5: Gaussian transitions N(F(x),Q(x)) bounded between global Gaussian RKHSs have constant Q, affine F with full-column-rank M, and MRM^T <= P+4Q.",
@@ -21,9 +21,14 @@
      "date": "2026-11-04",
      "corpus": "api.crossref.org, arxiv.org abstract pages and the GitHub API",
      "query": "registry records for every registry-identified bibliography entry (refs/records.jsonl)"
+    },
+    {
+     "date": "2026-11-09",
+     "corpus": "complete papers of Holevo 2017 (Theory Probab. Appl. 61(4) 712-718), Alekseev-Afonin-Bogachev 2021 (Doklady RAN 500, 10-15), Philipp et al. 2025a (PAMM e202400127) and Sang-Zhao arXiv:2610.28279v1",
+     "query": "theorem-level comparison of Gaussian-preservation characterisations with Theorem 5"
     }
    ],
-   "closestPriorWork": "Ikeda, Ishikawa and Sawano 2022 (deterministic composition rigidity); Ohnishi et al. 2024 Remark 3.1 (qualitative, deterministic)",
+   "closestPriorWork": "Holevo 2017 Theorem 1 (same affine-Gaussian conclusion from an incomparable premise: Feller maps preserving Gaussian measures, n to n, no RKHS hypothesis); Alekseev, Afonin and Bogachev 2021 (Gaussians on affine lines suffice; Feller cannot be dropped); Ikeda, Ishikawa and Sawano 2022 (deterministic composition rigidity); Ohnishi et al. 2024 Remark 3.1 (qualitative, deterministic)",
    "verdict": "new-in-bounded-search"
   },
   {

@@ -1,7 +1,7 @@
-# AI index: Gaussian RKHS invariance under stochastic dynamics (v0.1.0-candidate)
+# AI index: Gaussian RKHS invariance under stochastic dynamics (v0.1.1-candidate)
 
 Machine-oriented map of claims, evidence and limits. Human readers should start with [README.md](README.md) and the paper [manuscript.pdf](manuscript.pdf) (source [manuscript.md](manuscript.md)).
-Version DOI 10.5281/zenodo.23937400; concept DOI 10.5281/zenodo.23937399.
+Version DOI 10.5281/zenodo.24089772 (0.1.1-candidate; 0.1.0-candidate: 10.5281/zenodo.23937400); concept DOI 10.5281/zenodo.23937399. Version 0.1.1 changes wording and citations only (Holevo 2017 and Alekseev et al. 2021 compared at theorem level, PAMM numbering stated, Sang-Zhao 2026 cross-check); mathematics and code unchanged.
 
 ## Notation
 

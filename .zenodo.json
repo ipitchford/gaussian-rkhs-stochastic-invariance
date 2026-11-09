@@ -2,7 +2,7 @@
   "title": "When Gaussian kernel spaces are invariant under stochastic dynamics: transition rigidity, a Gaussian-component noise boundary and a discontinuous diffusion limit",
   "upload_type": "publication",
   "publication_type": "preprint",
-  "description": "<p><strong>Unrefereed research candidate.</strong> Kernel methods for stochastic Koopman operators (such as kernel EDMD) often assume that the dynamics map a Gaussian reproducing kernel Hilbert space (RKHS) into itself. This candidate determines when that can happen.</p><p><strong>Rigidity.</strong> If a Markov transition with Gaussian conditional laws N(F(x),Q(x)) (arbitrary Borel fields) maps one global Gaussian RKHS boundedly into another, then Q is constant, F is affine with full-column-rank matrix M, and MRM<sup>T</sup> &#x2AAF; P+4Q exactly. For additive noise whose characteristic function has a Gaussian lower bound (every infinitely divisible law, pure-jump included), the drift must be affine, and only the Gaussian covariance component enters the matrix boundary.</p><p><strong>Discontinuous diffusion limit.</strong> A compound-Poisson approximation of a stable linear diffusion converges in operator norm from the RKHS to bounded continuous functions at sharp order &epsilon;<sup>2</sup>, yet at t=1/10 every approximant sends the fixed observable exp(-8|x|<sup>2</sup>/5) outside the RKHS.</p><p><strong>Ornstein-Uhlenbeck answer.</strong> All-time invariance holds exactly when AP+PA<sup>T</sup> &#x2AAF; 4BB<sup>T</sup>; the sufficient condition AP+PA<sup>T</sup> &#x2AAF; 2BB<sup>T</sup> of Philipp et al. (2025, PAMM), whose necessity they left open, is not necessary (stable controllable shear A=[[-1,5],[0,-1]], B=P=I). The fixed affine criterion is a specialisation of classical Gaussian-Fock operator theory (Neretin); the witness and a proposed derivation were posted first, explicitly unproven, in GitHub issue the-omega-institute/trureturing #23376 (28 October 2026). Consequences: an exact bandwidth rule (isotropic width up to 4/&lambda;<sub>max</sub>, twice the earlier range), the invariance hypothesis of an existing kEDMD error bound for multivariate OU, sampling thresholds and growth and finite-rank statements in the kernel norm.</p><p>Limits: statements concern the global RKHS norm, not pointwise prediction or finite-data learning; state-dependent non-Gaussian transitions remain open. The archive contains the manuscript (PDF and Markdown source), code/verify.py (explicit checks valid under python -O), its retained output, the figure, novelty reports and SHA-256 sums. Assurance: written proofs; internal AI-assisted review only (not human peer review, independent reproduction or formal verification). Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+  "description": "<p><strong>Unrefereed research candidate.</strong> Kernel methods for stochastic Koopman operators (such as kernel EDMD) often assume that the dynamics map a Gaussian reproducing kernel Hilbert space (RKHS) into itself. This candidate determines when that can happen.</p><p><strong>Rigidity.</strong> If a Markov transition with Gaussian conditional laws N(F(x),Q(x)) (arbitrary Borel fields) maps one global Gaussian RKHS boundedly into another, then Q is constant, F is affine with full-column-rank matrix M, and MRM<sup>T</sup> &#x2AAF; P+4Q exactly. For additive noise whose characteristic function has a Gaussian lower bound (every infinitely divisible law, pure-jump included), the drift must be affine, and only the Gaussian covariance component enters the matrix boundary.</p><p><strong>Discontinuous diffusion limit.</strong> A compound-Poisson approximation of a stable linear diffusion converges in operator norm from the RKHS to bounded continuous functions at sharp order &epsilon;<sup>2</sup>, yet at t=1/10 every approximant sends the fixed observable exp(-8|x|<sup>2</sup>/5) outside the RKHS.</p><p><strong>Ornstein-Uhlenbeck answer.</strong> All-time invariance holds exactly when AP+PA<sup>T</sup> &#x2AAF; 4BB<sup>T</sup>; the sufficient condition AP+PA<sup>T</sup> &#x2AAF; 2BB<sup>T</sup> of Philipp et al. (2025, PAMM), whose necessity they left open, is not necessary (stable controllable shear A=[[-1,5],[0,-1]], B=P=I). The fixed affine criterion is a specialisation of classical Gaussian-Fock operator theory (Neretin); the witness and a proposed derivation were posted first, explicitly unproven, in GitHub issue the-omega-institute/trureturing #23376 (28 October 2026). Consequences: an exact bandwidth rule (isotropic width up to 4/&lambda;<sub>max</sub>, twice the earlier range), the invariance hypothesis of an existing kEDMD error bound for multivariate OU, sampling thresholds and growth and finite-rank statements in the kernel norm.</p><p>Limits: statements concern the global RKHS norm, not pointwise prediction or finite-data learning; state-dependent non-Gaussian transitions remain open. The archive contains the manuscript (PDF and Markdown source), code/verify.py (explicit checks valid under python -O), its retained output, the figure, novelty reports and SHA-256 sums. Assurance: written proofs; internal AI-assisted review only (not human peer review, independent reproduction or formal verification). Creator: Anonymous. Text CC0-1.0; code MIT.</p><p><strong>Changes in 0.1.1.</strong> Wording and citations only; theorems, proofs, figures and code are unchanged. The journal numbering of Philipp et al. (2025, PAMM) is stated; Theorem 5 is compared precisely with Holevo (2017, Theorem 1), which reaches the same affine-Gaussian conclusion from an incomparable premise (Gaussian-preserving Feller maps, no RKHS hypothesis), and with Alekseev, Afonin and Bogachev (2021); Sang and Zhao (2026) are credited for reproducing the one-variable criterion.</p>",
   "creators": [
     {
       "name": "Anonymous"
@@ -10,8 +10,8 @@
   ],
   "access_right": "open",
   "license": "cc-zero",
-  "version": "0.1.0-candidate",
-  "publication_date": "2026-11-04",
+  "version": "0.1.1-candidate",
+  "publication_date": "2026-11-09",
   "keywords": [
     "Koopman operator",
     "reproducing kernel Hilbert space",
@@ -25,9 +25,14 @@
   "notes": "Code (code/, the CI workflow) is MIT; prose, manuscript, figures and data are CC0-1.0. Bibliographic records in refs/ are factual metadata from Crossref, arXiv and the GitHub API.",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/ipitchford/gaussian-rkhs-stochastic-invariance/tree/v0.1.0-candidate",
+      "identifier": "https://github.com/ipitchford/gaussian-rkhs-stochastic-invariance/tree/v0.1.1-candidate",
       "relation": "isSupplementTo",
       "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23937400",
+      "relation": "isNewVersionOf",
+      "scheme": "doi"
     },
     {
       "identifier": "https://evidencepress.org/releases/gaussian-rkhs-stochastic-invariance/",
@@ -123,7 +128,12 @@
       "identifier": "arXiv:2502.15183",
       "relation": "references",
       "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2610.28279",
+      "relation": "references",
+      "scheme": "arxiv"
     }
   ],
-  "doi": "10.5281/zenodo.23937400"
+  "doi": "10.5281/zenodo.24089772"
 }

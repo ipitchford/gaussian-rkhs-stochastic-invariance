@@ -2,7 +2,7 @@
 title: "When Gaussian kernel spaces are invariant under stochastic dynamics"
 subtitle: "Transition rigidity, a Gaussian-component noise boundary and a discontinuous diffusion limit"
 author: "Anonymous"
-date: "4 November 2026"
+date: "9 November 2026"
 lang: en-GB
 documentclass: article
 fontsize: 11pt
@@ -28,7 +28,9 @@ Kernel methods for stochastic Koopman operators often assume that the dynamics m
 
 **Keywords:** Koopman operator; reproducing kernel Hilbert space; Gaussian kernel; Ornstein--Uhlenbeck process; Lévy noise; covariance rigidity; kernel EDMD; bandwidth selection.
 
-*Status.* Version 0.1.0-candidate (4 November 2026), archived at <https://doi.org/10.5281/zenodo.23937400> (all versions: <https://doi.org/10.5281/zenodo.23937399>). AI-assisted research paper, not externally refereed; internal AI-assisted review only. Finite checks are supplied as scripts; no proof-assistant verification has been done.
+*Status.* Version 0.1.1-candidate (9 November 2026), archived at <https://doi.org/10.5281/zenodo.24089772> (all versions: <https://doi.org/10.5281/zenodo.23937399>; version 0.1.0-candidate: <https://doi.org/10.5281/zenodo.23937400>). AI-assisted research paper, not externally refereed; internal AI-assisted review only. Finite checks are supplied as scripts; no proof-assistant verification has been done.
+
+*Changes in 0.1.1.* Wording and citations only; theorems, proofs, figures and code are unchanged. The journal numbering of Philipp et al. (2025a) is now stated (Section 1.1). Section 3 now compares Theorem 5 with Holevo (2017, Theorem 1) and Alekseev, Afonin and Bogachev (2021) precisely, and records that Sang and Zhao (2026) reproduce criterion (26) in one variable. The originality boundary for Theorem 5 in Section 1.4 now reads "covariance rigidity from RKHS boundedness".
 
 # Introduction
 
@@ -42,7 +44,7 @@ k_P(x,y)=\exp[-(x-y)^\top P^{-1}(x-y)],
 \]
 and \(\mathcal H_P\) for its RKHS on the whole of \(\mathbb R^d\). This paper asks which stochastic dynamics leave \(\mathcal H_P\) invariant, or more generally map \(\mathcal H_P\) boundedly into another Gaussian RKHS \(\mathcal H_R\).
 
-The question has a published starting point. For \(dX_t=AX_t\,dt+B\,dW_t\) with Hurwitz \(A\) and controllable \((A,B)\), Philipp et al. (2025a), Theorem 2.1, prove that \(\mathcal H_P\) is invariant under every \(K^t\) if \(AP+PA^\top\preceq2BB^\top\). Their notation is \(P=C^2\). In the arXiv version (arXiv:2405.14429v1) the abstract states: "The question of whether the sufficient Lyapunov-condition is also necessary is left as an open problem." Remark 2.2(c) reads: "It is not clear whether the condition (2.3) is also necessary for Koopman invariance of \(\mathbb H_C\). We discuss this at the end of Section 4." Remark 4.2 reads: "It is not clear whether the statement of Theorem 2.1 is actually an equivalence." We quote the arXiv version; we did not check that the remark numbering is unchanged in the journal version.
+The question has a published starting point. For \(dX_t=AX_t\,dt+B\,dW_t\) with Hurwitz \(A\) and controllable \((A,B)\), Philipp et al. (2025a), Theorem 2.1, prove that \(\mathcal H_P\) is invariant under every \(K^t\) if \(AP+PA^\top\preceq2BB^\top\). Their notation is \(P=C^2\). In the arXiv version (arXiv:2405.14429v1) the abstract states: "The question of whether the sufficient Lyapunov-condition is also necessary is left as an open problem." Remark 2.2(c) reads: "It is not clear whether the condition (2.3) is also necessary for Koopman invariance of \(\mathbb H_C\). We discuss this at the end of Section 4." Remark 4.2 reads: "It is not clear whether the statement of Theorem 2.1 is actually an equivalence." We quote the arXiv version. The journal version (PAMM 25(1), e202400127) has the same numbering for Theorem 2.1, Remark 2.2(c), Proposition 3.3, Proposition 4.1 and Remark 4.2, and the same wording of the quoted sentences, except that its Remark 2.2(c) refers to the condition as (3).
 
 ## Main results in brief
 
@@ -90,7 +92,7 @@ What we regard as new, within a bounded literature search current to 4 November 
 
 | Result | Status in this paper | Originality boundary |
 |---|---|---|
-| Gaussian transition rigidity (Thm 5) | Complete proof for arbitrary Borel mean and covariance fields, rectangular dimensions | Covariance rigidity proposed as new; deterministic affine rigidity is known |
+| Gaussian transition rigidity (Thm 5) | Complete proof for arbitrary Borel mean and covariance fields, rectangular dimensions | Covariance rigidity from RKHS boundedness proposed as new; the affine Gaussian form is known under Gaussian-preservation premises (Section 3); deterministic affine rigidity is known |
 | Additive-noise rigidity (Thm 9) | Complete proof for noise with a Gaussian lower bound on its characteristic function | Proposed as new; open for faster-decaying or vanishing characteristic functions |
 | Infinitely divisible noise boundary (Thms 8, 11) | Exact matrix boundary, image space and norm | Lévy--Khintchine machinery is standard; only the Gaussian component controls the boundary |
 | Diffusion approximation (Thm 12, Prop 13) | One fixed membership-loss observable, sharp order, explicit constants | Coexistence result proposed; the norm identity is standard kernel-mean duality |
@@ -352,7 +354,7 @@ I+\Gamma\succeq0\iff L^\top(I+4Q_0)^{-1}L\preceq I\iff LL^\top\preceq I+4Q_0.
 \]
 Under this inequality the diagonal-block conditions hold: \(0\preceq I-W\prec I\), \(L^\top WL\succ0\) since \(L\) is invertible, and \(W^{1/2}LL^\top W^{1/2}\preceq W^{1/2}(I+4Q_0)W^{1/2}\prec2I\) gives \(L^\top WL\prec2I\). Undoing the coordinate changes yields exactly \(MRM^\top\preceq P+4Q\).
 
-So the fixed affine criterion is an exact specialisation of an established theorem. The Fourier proof is a short route that makes the norm and the comparison with Philipp et al. transparent. Deterministic composition restrictions are also discussed by Gonzalez et al. (2024) and Middelkamp (2024, Section 4.4.2). Theorem 5 has a different premise from the characterisations of Gaussian-to-Gaussian maps in De Palma et al. (2015), Holevo (2017) and Alekseev et al. (2021), which assume that Gaussian *input measures* are sent to Gaussian measures. Here the law at each state is Gaussian, and boundedness between Gaussian RKHSs supplies the restriction. John and Parthasarathy (2021, Definition V.1) define their class by an already quadratic-exponential coherent generating function; their structural results do not derive that property from our hypotheses. These premise differences are material, but they are not by themselves proof of historical novelty.
+So the fixed affine criterion is an exact specialisation of an established theorem. The Fourier proof is a short route that makes the norm and the comparison with Philipp et al. transparent. Deterministic composition restrictions are also discussed by Gonzalez et al. (2024) and Middelkamp (2024, Section 4.4.2). Theorem 5 has a different premise from the characterisations of Gaussian-to-Gaussian maps in De Palma et al. (2015), Holevo (2017) and Alekseev et al. (2021). Holevo (2017, Theorem 1, p. 712) assumes a Feller endomorphism of the bounded signed measures on \(\mathbb R^n\) that maps every Gaussian probability measure to a Gaussian measure, and concludes that it is a Markov operator with transition law \(N(K_0x+y_0,\Upsilon_0)\): the same affine-Gaussian conclusion as Theorem 5, from a different premise. Alekseev et al. (2021, Theorems 1--2) extend this to locally convex spaces and need Gaussian images only of Gaussian measures concentrated on affine lines; their pushforward under \(x\mapsto x^3\) shows that Gaussian images of Dirac measures alone do not suffice, and their Remark 1 shows that the Feller condition, which their Theorems 3--4 weaken, cannot be dropped. In Theorem 5 only the image of each Dirac measure \(\delta_x\), the conditional law \(N(F(x),Q(x))\), is assumed Gaussian; nothing is assumed about the images of non-degenerate Gaussian input laws, and no Feller or continuity condition is imposed. Boundedness between Gaussian RKHSs supplies the restriction instead. Conversely, those theorems make no RKHS hypothesis, keep input and output dimensions equal, and give no rank condition or matrix inequality. The premises are incomparable; a posteriori the transitions of Theorem 5 lie in Holevo's class, so Theorem 5 is a new route to that conclusion, not a larger class. As a cross-check in one complex variable, Sang and Zhao (2026, Theorem 1.1 with \(p=q=2\)) characterise bounded Gaussian integral operators on the Fock space; with the parameters of (24) at \(d=1\) their condition reduces to (26), and their compactness criterion never holds for these operators, in agreement with Theorem 20. John and Parthasarathy (2021, Definition V.1) define their class by an already quadratic-exponential coherent generating function; their structural results do not derive that property from our hypotheses. These premise differences are material, but they are not by themselves proof of historical novelty.
 
 # The sharp Ornstein--Uhlenbeck criterion
 
@@ -731,7 +733,7 @@ In one dimension, (62) reads \(\sigma^2\le2\beta^2/a\) for \(dX=aX\,dt+\beta\,dW
 
 ## Consequence for kernel EDMD error bounds
 
-We use the numbering of the arXiv version of Philipp, Schaller, Worthmann, Peitz and Nüske (2025b), arXiv:2312.10460v1; we did not check whether it is unchanged in the journal version. Their Theorem 4.2 bounds the kEDMD prediction error for SDEs of the form (3.1) there. Its second estimate, their (4.2), holds under the additional hypothesis \(K^t\mathcal H_{\mathcal Y}\subset\mathcal H_{\mathcal X}\), where \(\mathcal H_{\mathcal X}\) and \(\mathcal H_{\mathcal Y}\) are the RKHSs of the kernel restricted to \(\mathcal X\subset\mathcal Y\):
+For Philipp, Schaller, Worthmann, Peitz and Nüske (2025b) we cite arXiv:2312.10460v1; theorem, remark and equation numbers below refer to it. Their Theorem 4.2 bounds the kEDMD prediction error for SDEs of the form (3.1) there. Its second estimate, their (4.2), holds under the additional hypothesis \(K^t\mathcal H_{\mathcal Y}\subset\mathcal H_{\mathcal X}\), where \(\mathcal H_{\mathcal X}\) and \(\mathcal H_{\mathcal Y}\) are the RKHSs of the kernel restricted to \(\mathcal X\subset\mathcal Y\):
 \[
 \|K^t-\widehat K^{m,t}_r\|_{\mathcal H_{\mathcal Y}\to L^2(\mathcal X;\mu)}\le\sqrt{\lambda_{r+1}}\,\|K^t\|_{\mathcal H_{\mathcal Y}\to\mathcal H_{\mathcal X}}+c_r\varepsilon,
 \]
@@ -875,5 +877,7 @@ Paulsen, V. I., & Raghupathi, M. (2016). *An introduction to the theory of repro
 Philipp, F. M., Schaller, M., Worthmann, K., Peitz, S., & Nüske, F. (2025a). Invariance of Gaussian RKHSs under Koopman operators of stochastic differential equations with constant matrix coefficients. *PAMM, 25*(1), e202400127. <https://doi.org/10.1002/pamm.202400127> ; quoted version <https://arxiv.org/abs/2405.14429v1>
 
 Philipp, F. M., Schaller, M., Worthmann, K., Peitz, S., & Nüske, F. (2025b). Error analysis of kernel EDMD for prediction and control in the Koopman framework. *Journal of Nonlinear Science, 35*(5), 92. <https://doi.org/10.1007/s00332-025-10182-3> ; numbering cited from <https://arxiv.org/abs/2312.10460v1>
+
+Sang, Y., & Zhao, L. (2026). Boundedness and compactness of Gaussian integral operators between Fock spaces. arXiv:2610.28279v1. <https://arxiv.org/abs/2610.28279v1>
 
 Sarkar, R. (2026). *Spectral theory of non-local Ornstein–Uhlenbeck operators* (Version 4). arXiv. <https://arxiv.org/abs/2502.15183v4>
